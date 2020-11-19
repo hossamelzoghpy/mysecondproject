@@ -1,0 +1,219 @@
+* ,*:after ,*:before{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Tahoma,Arial;
+    height: auto;
+}
+header{
+    position: relative;
+}
+header nav input ,header nav label{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background-image: url("../image/open.png");
+    background-size:contain;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+
+header nav input:checked ~ ul{
+    display:block;
+    
+}
+header nav input:checked ~ label{
+    background-image: url("../image/close.png");
+    background-size:contain;
+}
+header nav input{
+    display: none;
+}
+header nav {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+header nav logo{
+    float: left;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+}
+.clear{
+    clear: both;
+}
+header nav logo h2{
+    margin-left: 80px;
+    padding: 10px;
+    font-weight: bold;
+}
+header nav ul{
+    float: right;
+    width: 50%;
+    list-style: none;
+    margin-top: 20px;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+header nav ul li a{
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color:#eb5424;
+    font-weight: bold;
+}
+/*end nav bar*/  
+
+
+/*Media For Navbar*/
+
+    header nav logo{
+        float: none;
+        width: 100%;
+       
+    }
+header nav logo h2{
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+    }
+header nav ul{
+        display: none;
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+        
+    }
+header nav ul li{
+        display: block; 
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+header nav ul li a:hover{
+        font-weight: bold;
+        padding: 10px 0;
+        display: block; 
+        height: auto;
+        background: gray;
+        color: white;
+    }
+
+@media (min-width:1700px){
+    header nav input,header nav label{
+        display: none;
+    }
+}
+/*end of media of navbar*/
+
+
+/*Start in main home*/
+main header{
+    height: 500px;
+    background-image: url(../image/2p.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    
+}
+main header .contianer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+main header .contianer h1{
+    font-family:cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+main header .contianer h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #eb5424;
+}
+main header .contianer p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+main header .contianer p span{
+    color: black;
+    font-weight: 600;
+}
+main header .contianer button{
+    height: 35px;
+    width: 75px;
+    font-size: 15px;
+    background: none;
+    color: #eb5424;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+@media (max-width:1250px){
+    main header .contianer h1{
+        font-size: 40px;
+    }
+    main header .contianer h3{
+        font-size: 25px;
+    }
+    main header .contianer p{
+        font-size: 12px;
+    }
+}
+/*end of home*/
+
+/*start of aside*/
+.mywork{
+    margin: 40px 20px 50px 50px;
+    font-size: 55px;
+    font-weight: bold;
+    font-family:cursive;
+    color: black;
+    
+}
+.mywork span{
+    font-weight: normal;
+}
+aside .part1{
+    margin-left: 20px;
+    border: 2px solid #888;
+    float: left;
+    height: 300px;
+    text-align: center;
+    width: 20%;
+}
+aside .part1 i{
+    color: #888;
+    margin-bottom: 20px;
+}
+aside .part1 h4{
+    margin: 20px 0 ;
+    color: #eb5424;
+}
+
+aside .part1 hr{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+aside .part1 p{
+    margin-top: 80px;
+    font-size: 18px;
+    color: #888;
+    
+}
